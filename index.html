@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+  <meta charset="UTF-8">
+  <title>SimpleBeauty</title>
+  <style>
+    h1 {
+      text-align: center;
+      vertical-align: middle;
+      line-height: 90px;
+    }
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background-color: #cea5c9;
+      background-repeat: repeat repeat;
+      background-image: url(bg_item.png);
+    }
+    .login-container {
+      background-color: #fff;
+      padding: 40px;
+      border-radius: 5px;
+      box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
+    .login-container h2 {
+      text-align: center;
+    }
+    .form-group {
+      margin-bottom: 15px;
+    }
+    .form-group label {
+      display: block;
+      margin-bottom: 5px;
+    }
+    .form-group input {
+      width: 100%;
+      padding: 8px;
+      border: 1px solid #ccc;
+      border-radius: 3px;
+    }
+    .form-group button {
+      padding: 8px 12px;
+      background-color: #9b0089;
+      color: #fff;
+      border: none;
+      border-radius: 3px;
+      cursor: pointer;
+    }
+    .form-group button:hover {
+      background-color: #5a0650;
+    }
+    .alignator {
+      align-items: center;
+      display: flex;
+      justify-content: center;
+    }
+  </style>
+</head>
+<body>
+
+<div class="login-container">
+  <div class="alignator"><img src="flower_gif.gif"><img src="buddy_gif.gif"></div>
+  
+  <h1>Магазин SimpleBeauty</h1>
+  <h2>Авторизация</h2>
+  <form id="loginForm" action="auth.php" method="post">
+    <div class="form-group">
+      <label for="login">Имя пользователя:</label>
+      <input type="pass" name="login" id="login" required="">
+    </div>
+    <div class="form-group">
+      <label for="password">Пароль:</label>
+      <input type="password" name="password" id="password" required="">
+    </div>
+    <div class="form-group">
+      <button id="btn_login" name="btn_login" type="submit">Служебный вход</button>
+      <button id="register" name="register" type="submit">Регистрация</button>
+      <button id="client_login" name="client_login" type="submit">Клиентский вход</button>
+      <button id="guest_login" name="guest_login" type="submit">Гостевой вход</button>
+    </div>
+    <p>Автор: Баранова Алёна</p>
+  </form>
+</div>
+</body>
+</html>
